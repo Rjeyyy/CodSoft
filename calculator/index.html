@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <main role="application">
+        <div class="output">
+            <img src="dots.svg" aria-hidden="true">
+            <span id="result">0</span>
+        </div>
+        <div class="controls">
+            <button onclick="clearScreen()">AC</button>
+            <button onclick="append('%')">%</button>
+            <button onclick="append('^')">^</button>
+            <button onclick="append('/')">/</button>
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button onclick="append('*')">*</button>
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button onclick="append('+')">+</button>
+            <button onclick="append('1')">1</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('3')">3</button>
+            <button onclick="append('-')">-</button>
+            <button onclick="append('0')">0</button>
+            <button>&nbsp;</button>
+            <button onclick="append('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

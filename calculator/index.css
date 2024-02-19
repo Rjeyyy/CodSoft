@@ -1,0 +1,86 @@
+/* ----------------------------------------- */
+/* ----- Basic Setup ----- */
+/* ----------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media(max-width: 340px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-height: 610px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+:root {
+    --default-font-size: 3rem; 
+
+    --color-bg-1: #11151c;
+    --color-bg-2: #0e1015;
+
+    --color-text-1: #bcbfc0;
+    --color-text-2: #83878a;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--default-font-size);
+    color: var(--color-text-2);
+    background-image: linear-gradient(rgba(2,5,22,.85),rgba(2,5,22,.85)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    background: var(--color-bg-1);
+    max-width: 400px;
+}
+
+.output {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 6rem 3rem;
+    font-size: 8rem;
+    color: var(--color-text-1);
+    background: var(--color-bg-2);
+}
+
+img {
+    position: absolute;
+    object-fit: contain;
+    height: 1.5rem;
+    top: 1rem;
+    left: 1rem;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    display: block;
+    padding: 2rem;
+    flex: 0 0 25%;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+}
